@@ -105,7 +105,7 @@ main {
     margin-bottom: 20px;
 }
 
-#main-text a {
+#main-button {
     color: var(--main-grey);
     background-color: var(--main-white);
     border: none;
@@ -113,16 +113,16 @@ main {
     padding: 2.5px 5px;;
 }
 
-#main-text a:hover {
+#main-button:hover {
     color: var(--main-white);
     background-color: var(--main-grey);
     transition: 0.1s ease-in-out;
     text-decoration: none;
 }
-#main-text a:visited {
+#main-button:visited {
     color: var(--main-grey);
 }
-#main-text a:visited:hover {
+#main-button:visited:hover {
     color: var(--main-white);
 }
 
