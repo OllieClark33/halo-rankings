@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap + CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="html/halo3.css" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="images/masterchief.png"/>
+
+    <!-- Icons Script-->
+    <script src="https://kit.fontawesome.com/365c57c561.js" crossorigin="anonymous"></script>
+
+
+    <title>Halo Rankings</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+<!-- NAV BAR -->
+        <header>
+            <nav id="navbar">
+              <a href="html/halo1.html">
+                <img id="logo" src="images/haloO.png" alt="masterchief helmet"/>
+              </a>
+              <ul id="nav-list">
+                  <li><a href="html/halo2.html">List</a></li>
+                  <li><a href="html/halo3.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>  
+<!-- MAIN -->
+        <main>
+          <div id="background">
+            <img id="back-img" src="images/halo 45.png" alt="Halo 4 Poster"/>
+          </div>
+          <div id="main-text">
+            <h1>Contact Us</h1>
+            <div class="row">
+                <div class="col-xl-4">
+                    <a  href="https://www.facebook.com/profile.php?id=100001988978772"
+                        target="_blank">
+                        <button class="social-f btn btn-primary">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-xl-4">
+                    <a  href="https://github.com/OllieClark33"
+                        target="_blank">
+                        <button class="social btn btn-success">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-xl-4">
+                    <a  href="https://www.linkedin.com/in/oliverclark33/"
+                    target="_blank">
+                    <button class="social btn btn-danger">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
+                    </a>  
+                </div>
+            </div>
+<!-- FORM -->
+            <form onsubmit="success(); return false;">
+            <form id="form">
+                <div class="field">
+                    <label for="name" class="label">Name</label>
+                    <input  type="text" 
+                            id="name"
+                            placeholder="Name" 
+                            name="name" 
+                            class="text-left form-control"
+                            required>
+                </div>
+                <div class="field">
+                    <label for="email" class="label">Email</label>
+                    <input  type="email" 
+                            placeholder="Email" 
+                            name="email" 
+                            class="form-control"
+                            required>
+                </div>
+                <div class="field">
+                    <label for="message" class="label">Message</label>
+                    <textarea   name="message"
+                                placeholder="Message"
+                                class="form-control"
+                                required></textarea>
+                </div>
+            <button id="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>  Submit</button>
+            </form>
+            <div class="text-success" id="thanks">
+                <!--success text-->
+            </div>
+          </div>
+        </main>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script>
+        const form = document.querySelector("#form");
+
+        function success() {
+            let name = document.querySelector("#name").value.toLowerCase();
+            nameSplit = name.split("");
+            nameSplit[0] = nameSplit[0].toUpperCase();
+            name = nameSplit.join("");
+            document.querySelector("#submit").style.marginBottom = "20px";
+            document.querySelector("#thanks").style.opacity = "1.0";
+            document.querySelector("#thanks").innerHTML = "Success: Thanks, " + name + "!";
+        }
+    </script>
+</body>
+</html>
