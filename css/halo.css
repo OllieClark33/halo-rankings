@@ -217,6 +217,10 @@ a p {
     font-size: 4rem;
   }
 
+.social-links {
+    background-color: transparent;
+}
+
 .social {
     border-radius: 50px;
     margin: auto;
